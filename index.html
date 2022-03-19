@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todolist</title>
+    <!-- Get theme -->
+    <script>
+        let theme = localStorage.getItem('theme');
+        theme ? document.documentElement.setAttribute("data-theme", theme) : null
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+        </div>
+        <div class="todo" data-todo="app">
+            <div class="todo__header">
+                <h1 class="todo__title">
+                    To-Do List
+                </h1>
+                <p class="todo__subtitle">
+                    Create drag-and-drop to-do lists, reminders, and notes
+                </p>
+            </div>
+            <section class="card">
+                <div class="card__form form">
+                    <input class="form__input" placeholder="Add new tasks" type="text" data-todo="input" minlength="1"
+                        required>
+                    <button class="button button--submit form__submit" type="submit" aria-label="add new task"
+                        title="Add new" data-todo="submit" disabled>
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 4.58333C12 4.03104 11.5523 3.58333 11 3.58333C10.4477 3.58333 10 4.03104 10 4.58333V10H4.58331C4.03103 10 3.58331 10.4477 3.58331 11C3.58331 11.5523 4.03103 12 4.58331 12H10V17.4167C10 17.9689 10.4477 18.4167 11 18.4167C11.5523 18.4167 12 17.9689 12 17.4167V12H17.4166C17.9689 12 18.4166 11.5523 18.4166 11C18.4166 10.4477 17.9689 10 17.4166 10H12V4.58333Z"
+                                fill="currentcolor" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="card__setup setup">
+                    <div class="card__button-groupe" data-todo="filter">
+                        <button class="button button--text filter--active" data-todo="all">All</button>
+                        <button class="button button--text" data-todo="active">Active</button>
+                        <button class="button button--text" data-todo="completed">Completed</button>
+                    </div>
+                    <div class="card__button-groupe">
+                        <button class="button button--theme" data-todo="theme" aria-label="switch theme"
+                            title="Switch theme"></button>
+                        <button class="button button--reset" data-todo="reset" aria-label="clear all tasks"
+                            title="Clear all"></button>
+                    </div>
+                </div>
+                <ul class="task" data-todo="todo-list"></ul>
+            </section>
+        </div>
+    </main>
+    <div class="copyright">
+        Coded by
+        <a href="https://github.com/FightM9" target="_blank">
+            FightM9
+            </span>
+        </a>
+        <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
