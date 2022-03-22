@@ -1,11 +1,13 @@
 # 🌄 Awesome Todo App
-A simple todo written in Vanila JavaScript. No dependencies
-Try out now on: 
+Create to do lists, reminders, and notes for any purpose
+
+Try out now on: https://fightm9.github.io/simple-todo-list/
 
 ## Features
 
 - 😉 Minimalistic UI 
 - 🌗 Light and Dark Mode
+- 🔁 Drag and drop tasks
 - ✅ Focus on accessibility
 - 📝 Add, delete, edit and filter tasks
 - 📱 Tablet & mobile friendly
@@ -20,6 +22,7 @@ Try out now on:
 ## Technologies Used 
 
 - JavaScript
+- Browser API
 - CSS
 - HTML
 
