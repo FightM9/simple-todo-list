@@ -1,5 +1,5 @@
-# ⚡ Simple React Todo App
-A simple todo web application written in React + JavaScript. 
+# 🌄 Awesome Todo App
+A simple todo written in Vanila JavaScript. No dependencies
 Try out now on: 
 
 ## Features
@@ -12,12 +12,15 @@ Try out now on:
 
 ## Screenshot
 
+![demo-dark](./assets/demo-dark.png)
+
+![demo-light](./assets/demo-light.png)
+
 
 ## Technologies Used 
 
-- [React](https://reactjs.org/) - version 17.0
-- [React Hooks](https://reactjs.org/docs/hooks-intro.html) : useState, useReduce, useRef, useContext
-- [Material UI](https://mui.com/) - version 5.5
-
+- JavaScript
+- CSS
+- HTML
 
 
